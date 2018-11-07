@@ -19,6 +19,9 @@ basic layout
   padding-top: 7em;
   padding-bottom: 7em;
 }
+.area-small {
+  padding-top: 3em;
+}
 
 /*
 typography
@@ -29,6 +32,9 @@ typography
 }
 .bg-color-secondary {
   background-color: var(--color-secondary);
+}
+.bg-light-black {
+  background-color: var(--color-light-black);
 }
 .bg-color-gray {
   background-color: var(--color-gray);
