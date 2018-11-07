@@ -1,16 +1,16 @@
 @import "reset.css";
 @import "pages/index.css";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 :root{
   --color-black: #111111;
   --color-light-black: #444444;
-  --color-gray: #bbbbbb;
+  --color-gray: #dddddd;
   --color-white: #ffffff;
-  --color-primary: #E97115;
-  --color-secondary: #444872;
+  --color-primary:  #ffcc00;
+  --color-secondary: #222650;
 
-  --font-heading:'Open Sans', sans-serif;
-  --font-text: 'Slabo 27px', serif;
+  --font-heading:'Montserrat', sans-serif;
+  --font-text: 'Montserrat', sans-serif;;
 }
 /*
 basic layout
@@ -19,7 +19,7 @@ body, html {
   height: 100%;
 }
 .area {
-  padding-top: 7em;
+  padding-top: 6em;
   padding-bottom: 7em;
 }
 .area-small {
@@ -61,6 +61,10 @@ h1, h2, h3
 h1 {
   font-size: 2.4em;
   padding-bottom: 1.3em;
+
+}
+.overlay-heading {
+  font-weight: bold;
 }
 p, a, span {
   font-family: var(--font-text);
@@ -69,6 +73,7 @@ p {
   font-size: 1.4em;
   line-height: 1.2em;
   padding-bottom: 1.5em;
+  text-align: justify;
 }
 a {
   color: var(--color-primary);
