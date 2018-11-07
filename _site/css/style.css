@@ -51,9 +51,11 @@ typography
 }
 .overlay {
   position: relative;
-  right: -10%;
+  right: 0;
   top: 77%;
-
+}
+.overlay-content {
+  padding-left: 4em;
 }
 h1, h2, h3
 {
