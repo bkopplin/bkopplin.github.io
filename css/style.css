@@ -83,3 +83,6 @@ a:hover {
 .card {
 
 }
+.color-white {
+  color: var(--color-white);
+}
