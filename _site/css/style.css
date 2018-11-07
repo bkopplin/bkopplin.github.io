@@ -1,0 +1,94 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px');
+:root{
+  --color-black: #111111;
+  --color-light-black: #444444;
+  --color-gray: #bbbbbb;
+  --color-white: #ffffff;
+  --color-primary: #E97115;
+  --color-secondary: #444872;
+
+  --font-heading:'Open Sans', sans-serif;
+  --font-text: 'Slabo 27px', serif;
+}
+/*
+basic layout
+*/
+
+.area {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+.area-small {
+  padding-top: 3em;
+}
+
+/*
+typography
+*/
+
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+.bg-color-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-light-black {
+  background-color: var(--color-light-black);
+}
+.bg-color-gray {
+  background-color: var(--color-gray);
+}
+.bg-color-primary .area h1 {
+  color: var(--color-white);
+}
+h1, h2, h3
+{
+  font-family: var(--font-heading);
+}
+h1 {
+  font-size: 2.4em;
+  padding-bottom: 20px;
+}
+p, a, span {
+  font-family: var(--font-text);
+}
+p {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  padding-bottom: 1.5em;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.link {
+  color: var(--color-primary);
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  font-size: 1.4em;
+  padding: 15px;
+  display: inline-block;
+}
+.button-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.button-primary:hover{
+  color: var(--color-white);
+}
+.card {
+
+}
+.color-white {
+  color: var(--color-white);
+}
