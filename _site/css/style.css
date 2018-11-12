@@ -31,7 +31,7 @@ body, html {
 }
 
 /*
-typography
+colors
 */
 
 .bg-color-primary {
@@ -49,11 +49,24 @@ typography
 .bg-color-primary .area h1 {
   color: var(--color-white);
 }
+.color-white {
+  color: var(--color-white);
+}
+/*
+overlay
+*/
 .overlay {
   position: relative;
   right: 0;
   top: 77%;
 }
+.overlay-heading {
+  font-weight: bold;
+}
+/*
+typography
+*/
+
 h1, h2, h3
 {
   font-family: var(--font-heading);
@@ -61,11 +74,8 @@ h1, h2, h3
 h1 {
   font-size: 2.4em;
   padding-bottom: 1.3em;
+}
 
-}
-.overlay-heading {
-  font-weight: bold;
-}
 p, a, span {
   font-family: var(--font-text);
 }
@@ -91,6 +101,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/*
+buttons
+*/
 .button {
   font-size: 1.4em;
   padding: 15px;
@@ -103,12 +116,15 @@ a:hover {
 .button-primary:hover{
   color: var(--color-white);
 }
+/*
+bootstrap modifications
+*/
 .card {
   margin-bottom: 5em;
 }
-.color-white {
-  color: var(--color-white);
-}
+/*
+navbar
+*/
 .navbar {
   width: 100%;
   position: absolute;
