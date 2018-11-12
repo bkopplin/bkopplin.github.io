@@ -59,13 +59,12 @@ overlay
 .overlay {
   position: relative;
 
-
-
 }
 .overlay-buttom {
   top: 70%;
 }
 .overlay-right {
+  position: relative;
   top: 20px;
   left: 40%;
   width: 50%;
@@ -86,7 +85,7 @@ h1, h2, h3
 }
 h1 {
   font-size: 2.4em;
-  padding-bottom: 1.3em;
+  padding-bottom: 1.1em;
 }
 
 p, a, span {
@@ -137,8 +136,8 @@ bootstrap modifications
 }
 /*
 modifications*/
-.icon-fit {
-  height: 100%;
+.icon-big {
   width: 100%;
-  display: block;
+  font-size: 15em;
+  text-align: center;
 }
