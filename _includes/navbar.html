@@ -1,8 +1,11 @@
-<nav class="navbar bg-dark">
-  {% assign sorted_pages = site.pages | sort: "order"%}
-  {% for node in sorted_pages %}
-  <ul class="nav-list">
-    <li class="nav-item"><a href="{{ node.url }}" class="nav-link color-white">{{node.title}}</a></li>
-  </ul>
-  {% endfor %}
+<nav class="navbar bg-dark justify-content-end">
+
+    {% assign sorted_pages = site.pages | sort: "order"%}
+    {% for node in sorted_pages %}
+    <ul class="nav-list">
+      <li class="nav-item"><a href="{{ node.url }}" class="nav-link color-white">{{node.title}}</a></li>
+    </ul>
+    {% endfor %}
+
+
 </nav>
