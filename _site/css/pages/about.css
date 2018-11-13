@@ -1,0 +1,23 @@
+#img-about {
+  background-color: var(--color-black);
+}
+.progress-bar-java
+{
+  width: 70%;
+}
+.progress-bar-css
+{
+  width: 60%;
+}
+.progress-bar-sql {
+  width: 55%;
+}
+.progress-bar-german {
+  width: 100%;
+}
+.progress-bar-english {
+  width: 85%;
+}
+.progress-bar-french {
+  width: 50%;
+}

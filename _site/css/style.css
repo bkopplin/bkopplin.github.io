@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "pages/index.css";
+@import "pages/about.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 :root{
   --color-black: #111111;
@@ -26,12 +27,12 @@ body, html {
   padding-top: 3em;
 }
 .area-fullpage {
-  height: 100%;
+  height: calc(100% - 48px); // because of navigation bar padding
   width: 100%;
 }
 
 /*
-typography
+colors
 */
 
 .bg-color-primary {
@@ -49,23 +50,44 @@ typography
 .bg-color-primary .area h1 {
   color: var(--color-white);
 }
+.color-white {
+  color: var(--color-white);
+}
+/*
+overlay
+*/
 .overlay {
   position: relative;
-  right: 0;
-  top: 77%;
+
 }
+.overlay-buttom {
+  top: 70%;
+}
+.overlay-right {
+  position: relative;
+  top: 20px;
+  left: 40%;
+  width: 50%;
+}
+.overlay-content {
+
+}
+.overlay-heading {
+  font-weight: bold;
+}
+/*
+typography
+*/
+
 h1, h2, h3
 {
   font-family: var(--font-heading);
 }
 h1 {
   font-size: 2.4em;
-  padding-bottom: 1.3em;
+  padding-bottom: 1.1em;
+}
 
-}
-.overlay-heading {
-  font-weight: bold;
-}
 p, a, span {
   font-family: var(--font-text);
 }
@@ -91,6 +113,9 @@ a:hover {
   text-decoration: underline;
 }
 
+/*
+buttons
+*/
 .button {
   font-size: 1.4em;
   padding: 15px;
@@ -103,14 +128,16 @@ a:hover {
 .button-primary:hover{
   color: var(--color-white);
 }
+/*
+bootstrap modifications
+*/
 .card {
   margin-bottom: 5em;
 }
-.color-white {
-  color: var(--color-white);
-}
-.navbar {
+/*
+modifications*/
+.icon-big {
   width: 100%;
-  position: absolute;
-  top: 0;
+  font-size: 15em;
+  text-align: center;
 }
