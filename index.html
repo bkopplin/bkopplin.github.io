@@ -4,11 +4,14 @@ title: "home"
 order: 1
 ---
 <div class="area-fullpage" id="img-welcome">
-<div class="overlay overlay-buttom">
-  <div class="container">
-      <h1 class="overlay-heading color-white">Bjarne Kopplin</h1>
+  <div class="overlay color-white">
+    <div class=" overlay-box overlay-bottom overlay-left">
+      <div class="">
+        <h1 class="overlay-heading">Bjarne Kopplin</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 
 <div class="bg-color-white">
@@ -27,44 +30,10 @@ order: 1
         <h1 class="color-black">projects</h1>
       </div>
 
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="placeholder-286-180.svg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="text-right">
-              <a href="#" class="link">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="placeholder-286-180.svg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="text-right">
-              <a href="#" class="link">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img class="card-img-top" src="placeholder-286-180.svg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="text-right">
-              <a href="#" class="link">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {%for project in site.projects limit: 3%}
+      {%include project.html title = project.title url = project.url img = project.img%}
+      {%endfor%}
 
       <div class="col-12 text-center">
         <a href="projects.html" class="button button-primary">see all Projects</a>
