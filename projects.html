@@ -5,22 +5,13 @@ order: 3
 ---
 <div class="container area">
   <div class="row">
-
+    <div class="col-12">
+      <h1>Projects</h1>
+    </div>
     {% for project in site.projects %}
-    <!-- <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="placeholder-286-180.svg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{ project.title }}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <div class="text-right">
-            <a href='{{ project.url }}' class="link">learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>-->
-    {% include project.html title = project.title url = project.url %}
-    <!-- end project -->
+
+    {% include project.html title = project.title url = project.url img = project.img%}
+
     {% endfor %}
   </div>
   <!-- end row -->

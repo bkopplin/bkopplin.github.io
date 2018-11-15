@@ -24,7 +24,8 @@ body, html {
   padding-bottom: 7em;
 }
 .area-small {
-  padding-top: 3em;
+  padding-top: 2em;
+  padding-bottom: 0;
 }
 .area-fullpage {
   height: calc(100% - 48px); // because of navigation bar padding
@@ -159,7 +160,7 @@ buttons
 bootstrap modifications
 */
 .card {
-  margin-bottom: 5em;
+  margin-bottom: 2.5em;
 }
 .progress {
   height: 30px;

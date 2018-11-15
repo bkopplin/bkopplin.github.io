@@ -10,9 +10,25 @@ layout: default
         <h3>
           <a href="{{page.link}}" class="link"><i class="fab fa-{{page.link-icon}}" area-hide="true"></i> {{page.link-title}}</a>
         </h3>
+        <img src="{{page.img}}" alt="">
         {{content}}
       </div>
     </div>
+<div class="area">
+  <div class="row">
+    <div class="col-12">
+      <h1>other projects</h1>
+    </div>
+
+    <!-- todo: exclude current project -->
+    {%for project in site.projects limit: 3%}
+      {%include project.html title = project.title url = project.url img = project.img%}
+      {%endfor%}
+  </div>
+
+</div>
+
+
 
   </div>
 
