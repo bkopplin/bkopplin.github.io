@@ -85,7 +85,15 @@ h1, h2, h3
 }
 h1 {
   font-size: 2.4em;
-  padding-bottom: 1.1em;
+  padding-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}
+h3 {
+  font-size: 1.5em;
+  padding-bottom: 0.2em;
 }
 
 p, a, span {
@@ -113,6 +121,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.subheading {
+  padding-bottom: 0.3em;
+  display: block;
+}
 /*
 buttons
 */
