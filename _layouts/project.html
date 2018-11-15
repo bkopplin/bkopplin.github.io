@@ -5,31 +5,45 @@ layout: default
 <div class="bg-color-white">
   <div class="container area">
     <div class="row">
-      <div class="col-12">
+
+      <header class="col-12">
         <h1>{{page.title}}</h1>
         <h3>
           <a href="{{page.link}}" class="link"><i class="fab fa-{{page.link-icon}}" area-hide="true"></i> {{page.link-title}}</a>
         </h3>
-        <img src="{{page.img}}" alt="">
-        {{content}}
-      </div>
-    </div>
-<div class="area">
-  <div class="row">
-    <div class="col-12">
-      <h1>other projects</h1>
-    </div>
+      </header>
+      <!-- end header -->
 
-    <!-- todo: exclude current project -->
-    {%for project in site.projects limit: 3%}
+    <section class="col-12">
+      <img src="{{page.img}}" alt="">
+    </section>
+
+    <main class="col-12">
+      {{content}}
+    </main>
+
+  </div>
+  <!-- end of row -->
+</div>
+<!-- end of container -->
+</div>
+<!-- end of bg color -->
+
+<div class="bg-color-gray">
+  <div class="container area">
+    <section class="row">
+      <div class="col-12">
+        <h1>other projects</h1>
+      </div>
+      {%for project in site.projects limit: 3%}
       {%include project.html title = project.title url = project.url img = project.img%}
       {%endfor%}
+    </section>
   </div>
-
+  <!-- end of container -->
 </div>
+<!-- end of bg color -->
 
-
-
-  </div>
-
+<!-- end of row -->
 </div>
+<!-- end of area -->
