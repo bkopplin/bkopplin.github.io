@@ -53,6 +53,15 @@ colors
 .color-white {
   color: var(--color-white);
 }
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-light-black {
+  color: var(--color-light-black);
+}
 /*
 overlay
 */
@@ -85,7 +94,7 @@ h1, h2, h3
 }
 h1 {
   font-size: 2.4em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.6em;
 }
 h2 {
   font-size: 2em;
@@ -93,7 +102,7 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.3em;
 }
 
 p, a, span {
@@ -122,7 +131,7 @@ a:hover {
 }
 
 .subheading {
-  padding-bottom: 0.3em;
+  padding-bottom: 0.4em;
   display: block;
 }
 /*
@@ -145,6 +154,10 @@ bootstrap modifications
 */
 .card {
   margin-bottom: 5em;
+}
+.progress {
+  height: 30px;
+  margin-bottom: 0.5em;
 }
 /*
 modifications*/
