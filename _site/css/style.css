@@ -29,6 +29,9 @@ body, html {
 .area-fullpage {
   height: calc(100% - 48px); // because of navigation bar padding
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*
@@ -67,19 +70,22 @@ overlay
 */
 .overlay {
   position: relative;
-
+  height: 100%;
+  width: 100%;
 }
-.overlay-buttom {
-  top: 70%;
+.overlay-bottom {
+  position: absolute;
+  bottom: 0;
+}
+.overlay-left {
+  padding-left: 5%;
 }
 .overlay-right {
-  position: relative;
-  top: 20px;
-  left: 40%;
-  width: 50%;
+  right: 100px;
 }
-.overlay-content {
+.overlay-box {
 
+  width: 700px;
 }
 .overlay-heading {
   font-weight: bold;
