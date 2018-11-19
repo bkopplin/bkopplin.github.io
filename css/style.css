@@ -98,9 +98,11 @@ typography
 
 h1, h2, h3
 {
+
   font-family: var(--font-heading);
 }
 h1 {
+  font-weight: bolder;
   font-size: 2.4em;
   padding-bottom: 0.3em;
 }
@@ -144,6 +146,9 @@ a:hover {
 }
 .link:hover {
   text-decoration: underline;
+}
+input, textarea {
+  font-family: var(--font-text);
 }
 
 
@@ -191,8 +196,6 @@ modifications*/
   display: block;
   text-align: center;
 }
-
-
 
 
 @media (min-width: 768px) {
