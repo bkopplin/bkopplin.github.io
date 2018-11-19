@@ -91,6 +91,7 @@ overlay
 .overlay-heading {
   font-weight: bold;
 }
+
 /*
 typography
 */
@@ -101,7 +102,7 @@ h1, h2, h3
 }
 h1 {
   font-size: 2.4em;
-  padding-bottom: 0.6em;
+  padding-bottom: 0.3em;
 }
 h2 {
   font-size: 2em;
@@ -110,6 +111,14 @@ h2 {
 h3 {
   font-size: 1.5em;
   padding-bottom: 0.3em;
+}
+
+.subheading {
+  padding-bottom: 20px;
+  display: block;
+}
+.heading-big-padding {
+  padding-bottom: 20px;
 }
 
 p, a, span {
@@ -137,10 +146,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.subheading {
-  padding-bottom: 0.4em;
-  display: block;
-}
+
 /*
 buttons
 */
@@ -160,16 +166,40 @@ buttons
 bootstrap modifications
 */
 .card {
-  margin-bottom: 2.5em;
+  margin: 1em 0;
+
 }
 .progress {
   height: 30px;
   margin-bottom: 0.5em;
 }
+.progress-bar {
+  background-color: var(--color-primary);
+}
 /*
 modifications*/
 .icon-big {
-  width: 100%;
-  font-size: 15em;
-  text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .icon-big {
+    font-size: 120pt;
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .icon-big {
+  font-size: 150pt;
+}
+}
+
+
+@media (min-width: 1200px) {
+  .icon-big {
+    font-size: 200pt;
+  }
 }
