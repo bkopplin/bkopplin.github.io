@@ -1,5 +1,6 @@
 #img-about {
-  background-image: url("https://picsum.photos/g/1000/700?image=1005");
+  background-image: url(../../img/img2.png);
+  background-attachment: fixed;
 }
 .progress-bar-java
 {
