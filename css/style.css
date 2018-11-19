@@ -21,10 +21,7 @@ body, html {
   padding-top: 6em;
   padding-bottom: 7em;
 }
-.area-small {
-  padding-top: 2em;
-  padding-bottom: 0;
-}
+
 .area-fullpage {
   height: calc(100% - 48px); // because of navigation bar padding
   width: 100%;
