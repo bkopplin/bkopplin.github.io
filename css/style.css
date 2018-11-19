@@ -179,6 +179,10 @@ bootstrap modifications
 /*
 modifications*/
 .icon-big {
+  font-size: 150pt;
+  padding-bottom: 50px;
+  display: block;
+  text-align: center;
 }
 
 
