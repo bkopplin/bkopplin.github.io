@@ -1,6 +1,4 @@
 @import "reset.css";
-@import "pages/index.css";
-@import "pages/about.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 :root{
   --color-black: #111111;
@@ -34,6 +32,39 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.background-image {
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+}
+#img-welcome {
+  background-image: url(../img/img1.jpg);
+}
+#img-about {
+  background-image: url(../img/img2.png);
+}
+.progress-bar-java
+{
+  width: 70%;
+}
+.progress-bar-css
+{
+  width: 60%;
+}
+.progress-bar-sql {
+  width: 55%;
+}
+.progress-bar-german {
+  width: 100%;
+}
+.progress-bar-english {
+  width: 85%;
+}
+.progress-bar-french {
+  width: 50%;
+}
+
 
 /*
 colors
