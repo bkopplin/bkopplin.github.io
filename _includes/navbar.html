@@ -4,12 +4,14 @@
     <span class="fa fa-bars color-white"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navContentCollapse">
+      <ul class="navbar-nav ">
     {% assign sorted_pages = site.pages | sort: "order"%}
     {% for node in sorted_pages %}
-    <ul class="navbar-nav ">
+
       <li class="nav-item"><a href="{{ node.url }}" class="nav-link color-white">{{node.title}}</a></li>
-    </ul>
+
     {% endfor %}
+  </ul>
     </div>
 
 

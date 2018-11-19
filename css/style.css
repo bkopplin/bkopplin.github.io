@@ -103,25 +103,33 @@ overlay
 .overlay {
   position: relative;
   height: 100%;
-  width: 100%;
 }
 .overlay-bottom {
   position: absolute;
   bottom: 0;
 }
-.overlay-left {
-  padding-left: 5%;
-}
-.overlay-right {
-  padding-left: 50px;
-}
-.overlay-box {
 
-  width: 700px;
+.overlay-box {
+  padding: 15px;
+  background-color: var(--color-light-black);
+  opacity: 0.6 ;
+  width: 100%;
 }
 .overlay-heading {
   font-weight: bold;
 }
+
+@media (min-width: 768px) {
+  .overlay-bottom {
+    bottom: 5%;
+  }
+  .overlay-left {
+    padding-left: 5%;
+  }
+  .overlay-box {
+    max-width: 40%;
+  }
+ }
 
 /*
 typography
@@ -160,8 +168,8 @@ p, a, span {
 p {
   font-size: 1.4em;
   line-height: 1.2em;
-  padding-bottom: 1.5em;
-  text-align: justify;
+  padding-bottom: 0.5em;
+  text-align: left;
 }
 a {
   color: var(--color-primary);
@@ -236,7 +244,6 @@ modifications*/
 @media (min-width: 768px) {
   .icon-big {
     font-size: 120pt;
-
     width: 60%;
   }
 }
