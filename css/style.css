@@ -173,6 +173,9 @@ bootstrap modifications
   height: 30px;
   margin-bottom: 0.5em;
 }
+.progress-bar {
+  background-color: var(--color-primary);
+}
 /*
 modifications*/
 .icon-big {
