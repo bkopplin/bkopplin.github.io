@@ -179,7 +179,27 @@ bootstrap modifications
 /*
 modifications*/
 .icon-big {
-  width: 100%;
-  font-size: 15em;
-  text-align: center;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .icon-big {
+    font-size: 120pt;
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .icon-big {
+  font-size: 150pt;
+}
+}
+
+
+@media (min-width: 1200px) {
+  .icon-big {
+    font-size: 200pt;
+  }
 }
