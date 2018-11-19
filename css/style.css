@@ -82,7 +82,7 @@ overlay
   padding-left: 5%;
 }
 .overlay-right {
-  right: 100px;
+  padding-left: 50px;
 }
 .overlay-box {
 
