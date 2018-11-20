@@ -163,8 +163,8 @@ p, a, span {
   font-family: var(--font-text);
 }
 p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+  font-size: 12pt;
+  line-height: 1.3em;
   padding-bottom: 0.5em;
   text-align: left;
 }
