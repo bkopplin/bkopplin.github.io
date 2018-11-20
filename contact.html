@@ -10,11 +10,23 @@ order: 4
       <div class="col-12">
         <h1>Contact me</h1>
         <form class="" action="index.html" method="get">
-          <div class="input-group mb-3">
+          <div class="mb-3 input-group mb-3 w-50">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <span class="input-group-text">to</span>
             </div>
-            <input type="email" class="form-control" placeholder="email" aria-label="Username" aria-describedby="basic-addon1">
+
+            <input type="email" class="form-control" value="bjarne.kopplin@pm.me" id="myEmail" readonly>
+
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary button-primary" type="button" id="button-addon2" onclick="copyToClipboard(myEmail)"><i class="fa fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class=" input-group mb-3 w-50">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+            </div>
+            <input type="email" class="form-control" placeholder="your email">
           </div>
           <div class="form-group input-group">
             <div class="input-group-prepend">
@@ -25,28 +37,12 @@ order: 4
           <!-- input-groups structure copied from getbootstrap.com -->
 
 
-          <button type="submit" class="button button-primary" name="" value="submit">submit</button>
+          <button type="submit" class="button button-primary" name="submit-btn" value="submit">submit</button>
 
 
 
 
         </form>
-      </div>
-    </div> <!-- end of row -->
-  </section>
-</div>
-<div class="bg-color-secondary color-white">
-  <section class="container area">
-    <div class="row">
-  <div class="col-sm-4">
-
-  </div>
-      <div class="col-sm-8">
-        <h1>or send me an e-mail</h1>
-        <a href="#" class="subheading"><i class="fa fa-envelope" aria-hidden="true"></i> bjarne.kopplin@pm.me</a>
-
-
-
       </div>
     </div> <!-- end of row -->
   </section>

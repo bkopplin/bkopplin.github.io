@@ -21,10 +21,7 @@ body, html {
   padding-top: 6em;
   padding-bottom: 7em;
 }
-.area-small {
-  padding-top: 2em;
-  padding-bottom: 0;
-}
+
 .area-fullpage {
   height: calc(100% - 48px); // because of navigation bar padding
   width: 100%;
@@ -135,7 +132,7 @@ overlay
 typography
 */
 
-h1, h2, h3
+h1, h2, h3, h4
 {
 
   font-family: var(--font-heading);
@@ -166,8 +163,8 @@ p, a, span {
   font-family: var(--font-text);
 }
 p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+  font-size: 12pt;
+  line-height: 1.3em;
   padding-bottom: 0.5em;
   text-align: left;
 }
