@@ -3,17 +3,17 @@ layout: default
 title: "projects"
 order: 3
 ---
-<div class="container area">
+<section class="container area">
   <div class="row">
     <div class="col-12">
-      <h1>Projects</h1>
+      <h2>Projects</h2>
     </div>
     {% for project in site.projects %}
 
-    {% include project.html title = project.title url = project.url img = project.img%}
+    {% include project.html title = project.title url = project.url img = project.img description = project.description%}
 
     {% endfor %}
   </div>
   <!-- end row -->
-</div>
+</section>
 <!-- end container  -->

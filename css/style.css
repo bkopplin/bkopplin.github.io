@@ -1,152 +1,103 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
-:root{
+
+:root {
   --color-black: #111111;
   --color-light-black: #444444;
   --color-gray: #dddddd;
   --color-white: #ffffff;
-  --color-primary:  #ffcc00;
+  --color-primary: #ffcc00;
   --color-secondary: #222650;
-
-  --font-heading:'Montserrat', sans-serif;
-  --font-text: 'Montserrat', sans-serif;;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-text: 'Montserrat', sans-serif;
+  ;
 }
+
 /*
 basic layout
 */
 body, html {
   height: 100%;
 }
+
 .area {
   padding-top: 6em;
   padding-bottom: 7em;
 }
 
 .area-fullpage {
-  height: calc(100% - 48px); // because of navigation bar padding
+  /* //height: calc(100% - 48px); // because of navigation bar padding */
+  height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.background-image {
-  background-attachment: fixed;
-  background-position: right;
-  background-size: cover;
-}
-#img-welcome {
-  background-image: url(../img/img1.jpg);
-}
-#img-about {
-  background-image: url(../img/img2.png);
-}
-.progress-bar-java
-{
-  width: 70%;
-}
-.progress-bar-css
-{
-  width: 60%;
-}
-.progress-bar-sql {
-  width: 55%;
-}
-.progress-bar-german {
-  width: 100%;
-}
-.progress-bar-english {
-  width: 85%;
-}
-.progress-bar-french {
-  width: 50%;
-}
-
-
 /*
 colors
 */
-
 .bg-color-primary {
   background-color: var(--color-primary);
 }
+
 .bg-color-secondary {
   background-color: var(--color-secondary);
 }
+
 .bg-light-black {
   background-color: var(--color-light-black);
 }
+
 .bg-color-gray {
   background-color: var(--color-gray);
 }
+
 .bg-color-primary .area h1 {
   color: var(--color-white);
 }
+
 .color-white {
   color: var(--color-white);
 }
+
 .color-primary {
   color: var(--color-primary);
 }
+
 .color-secondary {
   color: var(--color-secondary);
 }
+
 .color-light-black {
   color: var(--color-light-black);
 }
-/*
-overlay
-*/
-.overlay {
-  position: relative;
-  height: 100%;
-}
-.overlay-bottom {
-  position: absolute;
-  bottom: 0;
-}
-
-.overlay-box {
-  padding: 15px;
-  background-color: var(--color-light-black);
-  opacity: 0.6 ;
-  width: 100%;
-}
-.overlay-heading {
-  font-weight: bold;
-}
-
-@media (min-width: 768px) {
-  .overlay-bottom {
-    bottom: 5%;
-  }
-  .overlay-left {
-    padding-left: 5%;
-  }
-  .overlay-box {
-    max-width: 40%;
-  }
- }
 
 /*
 typography
 */
-
-h1, h2, h3, h4
-{
-
+h1, h2, h3, h4 {
   font-family: var(--font-heading);
 }
+
 h1 {
   font-weight: bolder;
   font-size: 2.4em;
   padding-bottom: 0.3em;
 }
+
 h2 {
+  font-weight: bolder;
+  font-size: 2.4em;
+  padding-bottom: 0.3em;
+}
+
+h3 {
   font-size: 2em;
   padding-bottom: 0.5em;
 }
-h3 {
+
+h4 {
   font-size: 1.5em;
   padding-bottom: 0.3em;
 }
@@ -155,23 +106,23 @@ h3 {
   padding-bottom: 20px;
   display: block;
 }
-.heading-big-padding {
-  padding-bottom: 20px;
-}
 
 p, a, span {
   font-family: var(--font-text);
 }
+
 p {
   font-size: 12pt;
   line-height: 1.3em;
   padding-bottom: 0.5em;
-  text-align: left;
+  text-align: justify;
 }
+
 a {
   color: var(--color-primary);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--color-primary);
   text-decoration: none;
@@ -180,13 +131,24 @@ a:hover {
 .link {
   color: var(--color-primary);
 }
+
 .link:hover {
   text-decoration: underline;
 }
+/*
+input
+*/
 input, textarea {
   font-family: var(--font-text);
 }
-
+.input-oneline {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .input-oneline {
+    width: 50%;
+  }
+}
 
 /*
 buttons
@@ -197,46 +159,142 @@ buttons
   padding: 8px;
   display: inline-block;
 }
+
 .button-primary {
   color: var(--color-white);
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
+
 .button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
-.button-primary:hover{
+
+.button-primary:hover {
   color: var(--color-white);
 }
+
 /*
-bootstrap modifications
+images
 */
+.background-image {
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+}
+
+#img-welcome {
+  background-image: url(../img/img1.jpg);
+}
+
+#img-about {
+  background-image: url(../img/img2.png);
+}
+
+
+/*
+card
+*/
+.card-body {
+  position: relative;
+
+}
+.card-text {
+  text-align: left;
+}
+.card-link {
+  position: absolute;
+  bottom: 20px;
+  right:  15px;
+}
 .card {
   margin: 1em 0;
-
+  height: 450px;
 }
 
+/*
+progress bars
+*/
 .progress {
-  height: 30px;
-  margin-bottom: 0.5em;
+  height: 20px;
 }
+
 .progress-bar {
   background-color: var(--color-primary);
 }
+
+.progress-bar-java {
+  width: 70%;
+}
+
+.progress-bar-css {
+  width: 60%;
+}
+
+.progress-bar-sql {
+  width: 55%;
+}
+
+.progress-bar-german {
+  width: 100%;
+}
+
+.progress-bar-english {
+  width: 85%;
+}
+
+.progress-bar-french {
+  width: 50%;
+}
+
 /*
-modifications*/
+overlay
+*/
+.overlay {
+  position: relative;
+  height: 100%;
+}
+
+.overlay-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.overlay-box {
+  padding: 15px;
+  background-color: var(--color-light-black);
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .overlay-bottom {
+    bottom: 5%;
+  }
+
+  .overlay-left {
+    padding-left: 5%;
+  }
+
+  .overlay-box {
+    max-width: 100%;
+  }
+}
+
+/*
+icons
+*/
 .icon-big {
   font-size: 150pt;
   padding-bottom: 50px;
   display: block;
   text-align: center;
 }
+
 .icon-medium {
   font-size: 80pt;
   display: inline;
 }
-
 
 @media (min-width: 768px) {
   .icon-big {
@@ -247,10 +305,9 @@ modifications*/
 
 @media (min-width: 992px) {
   .icon-big {
-  font-size: 150pt;
+    font-size: 150pt;
+  }
 }
-}
-
 
 @media (min-width: 1200px) {
   .icon-big {

@@ -35,8 +35,12 @@ layout: default
       <div class="col-12">
         <h1>other projects</h1>
       </div>
-      {%for project in site.projects limit: 3%}
-      {%include project.html title = project.title url = project.url img = project.img%}
+      {%assign projects = site.projects %}
+
+      {%for project in projects limit: 3%}
+
+      {%include project.html title = project.title url = project.url img = project.img description = project.description%}
+
       {%endfor%}
     </section>
   </div>
