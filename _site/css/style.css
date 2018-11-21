@@ -34,23 +34,6 @@ body, html {
 }
 
 /*
-images
-*/
-.background-image {
-  background-attachment: fixed;
-  background-position: right;
-  background-size: cover;
-}
-
-#img-welcome {
-  background-image: url(../img/img1.jpg);
-}
-
-#img-about {
-  background-image: url(../img/img2.png);
-}
-
-/*
 colors
 */
 .bg-color-primary {
@@ -180,6 +163,24 @@ buttons
 .button-primary:hover {
   color: var(--color-white);
 }
+
+/*
+images
+*/
+.background-image {
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+}
+
+#img-welcome {
+  background-image: url(../img/img1.jpg);
+}
+
+#img-about {
+  background-image: url(../img/img2.png);
+}
+
 
 /*
 card
