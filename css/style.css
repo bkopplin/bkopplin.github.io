@@ -26,7 +26,8 @@ body, html {
 }
 
 .area-fullpage {
-  height: calc(100% - 48px); // because of navigation bar padding
+  /* //height: calc(100% - 48px); // because of navigation bar padding */
+  height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
