@@ -107,7 +107,6 @@ overlay
 }
 
 .overlay-box {
-
   padding: 15px;
   background-color: var(--color-light-black);
   opacity: 0.6 ;
@@ -122,7 +121,7 @@ overlay
     padding-left: 5%;
   }
   .overlay-box {
-    max-width: 40%;
+    max-width: 100%;
   }
  }
 
