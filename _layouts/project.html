@@ -39,7 +39,7 @@ layout: default
 
       {%for project in projects limit: 3%}
 
-      {%include project.html title = project.title url = project.url img = project.img%}
+      {%include project.html title = project.title url = project.url img = project.img description = project.description%}
 
       {%endfor%}
     </section>

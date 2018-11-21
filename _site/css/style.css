@@ -185,8 +185,21 @@ images
 /*
 card
 */
+.card-body {
+  position: relative;
+
+}
+.card-text {
+
+}
+.card-link {
+  position: absolute;
+  bottom: 20px;
+  right:  15px;
+}
 .card {
   margin: 1em 0;
+  height: 450px;
 }
 
 /*

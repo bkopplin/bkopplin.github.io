@@ -10,7 +10,7 @@ order: 3
     </div>
     {% for project in site.projects %}
 
-    {% include project.html title = project.title url = project.url img = project.img%}
+    {% include project.html title = project.title url = project.url img = project.img description = project.description%}
 
     {% endfor %}
   </div>
