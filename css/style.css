@@ -135,9 +135,19 @@ a:hover {
 .link:hover {
   text-decoration: underline;
 }
-
+/*
+input
+*/
 input, textarea {
   font-family: var(--font-text);
+}
+.input-oneline {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .input-oneline {
+    width: 50%;
+  }
 }
 
 /*
