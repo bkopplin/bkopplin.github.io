@@ -3,7 +3,7 @@ layout: default
 title: "home"
 order: 1
 ---
-<div class="container pb-3">
+<div class="container pt-lg-5 pb-3">
     <h2>hi.</h2>
     <p>I’m bjarne. I’m a software enthusiast.</p>
     <p>currently based in Hamburg.</p>
@@ -12,7 +12,10 @@ order: 1
 <div class="container pb-3">
   <div class="row">
     <div class="col-12">
-        <h2 class="d-inline-block mr-1">Posts</h2>
+        <div>
+            <h2 class="d-inline-block mr-1">Posts</h2>
+            <a href="posts.html" class="text-secondary small">more</a>
+        </div>
 
         {%include post-list.html items = site.posts title="Posts" %}
 
@@ -25,12 +28,24 @@ order: 1
     <div class="col-12">
         <div>
         <h2 class="d-inline-block mr-1">Projects</h2>
+            <a href="projects.html" class="text-secondary small">more</a>
         </div>
       {%include project-list.html %}
-
-
     </div>
   </div>
 </div>
 
 
+<div class="container pb-3">
+    <div class="row">
+        <div class="col-12">
+            <h2>Find me</h2>
+            <a href="https://www.github.com/bkopplin" target="_blank" class="d-inline-block link-underline-secondary mr-2">
+                <div><i class="fa fa-github mr-1"></i>GitHub</div>
+            </a>
+            <a href="https://www.github.com/bkopplin" target="_blank" class="d-inline-block link-underline-secondary">
+                <div><i class="fa fa-linkedin mr-1"></i>LinkedIn</div>
+            </a>
+        </div>
+    </div>
+</div>
