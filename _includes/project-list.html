@@ -1,0 +1,5 @@
+{%for project in site.projects limit: 30%}
+{%include project.html title = project.title url = project.url img = project.img description = project.description%}
+{%endfor%}
+
+

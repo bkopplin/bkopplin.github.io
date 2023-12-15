@@ -5,8 +5,8 @@ link: "https://www.github.com"
 link-title: "see on github"
 link-icon: "github"
 img: "https://picsum.photos/1000/700?image=36"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing eli"
+description: "this is just a placeholder"
 ---
-also getting bored by peeling clementins?
+also getting bored of peeling clementins?
 
-# here's the solution
+## here's the *perfect* solution solution

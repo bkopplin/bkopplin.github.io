@@ -1,0 +1,10 @@
+<div  class="mb-3">
+  {% for i in include.items %}
+  {%include post.html
+    title = i.title
+    url = i.url
+  %}
+  {% endfor %}
+
+</div>
+
