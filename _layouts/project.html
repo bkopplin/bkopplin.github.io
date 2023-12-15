@@ -9,10 +9,10 @@ layout: default
       <header class="col-12">
         <h1>{{page.title}}</h1>
         <span class="subheading">
+          <a href="/" class="link mr-3">up</a>
           <a href="{{page.link}}" class="link"><i class="fa fa-{{page.link-icon}}" area-hide="true"></i> {{page.link-title}}</a>
         </span>
       </header>
-      <!-- end header -->
 
     <section class="col-12">
       <img src="{{page.img}}" alt="" class="img-fluid pb-3">
@@ -23,31 +23,21 @@ layout: default
     </main>
 
   </div>
-  <!-- end of row -->
 </div>
-<!-- end of container -->
 </div>
-<!-- end of bg color -->
 
-<div class="bg-color-gray">
-  <div class="container area">
+</div>
+  <div class="container">
     <section class="row">
       <div class="col-12">
         <h1>other projects</h1>
-      </div>
+
       {%assign projects = site.projects %}
 
       {%for project in projects limit: 3%}
-
-      {%include project.html title = project.title url = project.url img = project.img description = project.description%}
-
+        {%include project.html title = project.title url = project.url img = project.img description = project.description%}
       {%endfor%}
+      </div>
     </section>
   </div>
-  <!-- end of container -->
-</div>
-<!-- end of bg color -->
 
-<!-- end of row -->
-</div>
-<!-- end of area -->

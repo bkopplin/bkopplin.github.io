@@ -7,12 +7,13 @@ order: 3
   <div class="row">
     <div class="col-12">
       <h2>Projects</h2>
-    </div>
+
     {% for project in site.projects %}
 
     {% include project.html title = project.title url = project.url img = project.img description = project.description%}
 
     {% endfor %}
+    </div>
   </div>
   <!-- end row -->
 </section>
