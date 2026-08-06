@@ -1,51 +1,123 @@
 ---
 layout: default
-title: "home"
-order: 1
+title: "Software Freelance Developer"
 ---
-<div class="container pt-lg-5 pb-3">
-    <h2>hi.</h2>
-    <p>I’m bjarne. I’m a software enthusiast.</p>
-    <p>currently based in Hamburg.</p>
-</div>
-
-<div class="container pb-3">
-  <div class="row">
-    <div class="col-12">
-        <div>
-            <h2 class="d-inline-block mr-1">Posts</h2>
-            <a href="posts.html" class="text-secondary small">more</a>
-        </div>
-
-        {%include post-list.html items = site.posts title="Posts" %}
-
+<div class="onepager">
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a href="#top" class="brand">BK // FREELANCE ENGINEERING</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#stack">Stack</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</div>
+  </header>
 
-<div class="container pb-3">
-  <div class="row">
-    <div class="col-12">
-        <div>
-        <h2 class="d-inline-block mr-1">Projects</h2>
-            <a href="projects.html" class="text-secondary small">more</a>
-        </div>
-      {%include project-list.html %}
+  <section class="hero shell">
+    <p class="eyebrow">INDEPENDENT SOFTWARE DEVELOPER</p>
+    <h1>Custom web products.<br>Built where your business is.</h1>
+    <p class="lead">
+      Freelance developer from Germany, building reliable custom web platforms for teams worldwide.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary-cyber">Start a Project</a>
     </div>
-  </div>
-</div>
+  </section>
 
-
-<div class="container pb-3">
-    <div class="row">
-        <div class="col-12">
-            <h2>Find me</h2>
-            <a href="https://www.github.com/bkopplin" target="_blank" class="d-inline-block link-underline-secondary mr-2">
-                <div><i class="fa fa-github mr-1"></i>GitHub</div>
-            </a>
-            <a href="https://www.github.com/bkopplin" target="_blank" class="d-inline-block link-underline-secondary">
-                <div><i class="fa fa-linkedin mr-1"></i>LinkedIn</div>
-            </a>
-        </div>
+  <section class="section shell" id="services">
+    <div class="section-head">
+      <p class="eyebrow">WHAT I BUILD</p>
+      <h2>Software crafted for speed, clarity, and growth.</h2>
     </div>
+    <div class="cards-grid">
+      <article class="card-cyber">
+        <h3>Functional Core Systems</h3>
+        <p>Domain logic in functional style using Scala, Kotlin, and TypeScript to keep behavior predictable and testable.</p>
+      </article>
+      <article class="card-cyber">
+        <h3>Modern Web Frontends</h3>
+        <p>React.js frontends with strong UX and clear architecture, integrated cleanly with product APIs and analytics.</p>
+      </article>
+      <article class="card-cyber">
+        <h3>Backend and API Delivery</h3>
+        <p>High-impact delivery in Node.js, Deno, Python, and Scala for integrations, automation, and platform features.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section shell" id="stack">
+    <div class="section-head">
+      <p class="eyebrow">TECH STACK</p>
+      <h2>Functional-first engineering across modern web platforms.</h2>
+    </div>
+    <div class="stack-grid">
+      <article class="stack-card">
+        <h3>Core Languages</h3>
+        <ul>
+          <li>Scala</li>
+          <li>Python</li>
+          <li>Kotlin</li>
+          <li>TypeScript</li>
+        </ul>
+      </article>
+      <article class="stack-card">
+        <h3>Web Runtime & UI</h3>
+        <ul>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Deno</li>
+        </ul>
+      </article>
+      <article class="stack-card">
+        <h3>Engineering Style</h3>
+        <ul>
+          <li>Functional programming mindset</li>
+          <li>Composable architecture</li>
+          <li>Type-safe APIs</li>
+          <li>Testable domain logic</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section shell" id="workflow">
+    <div class="section-head">
+      <p class="eyebrow">HOW I WORK</p>
+      <h2>Lean process, measurable outcomes.</h2>
+    </div>
+    <ol class="timeline-cyber">
+      <li>
+        <h3>Discovery</h3>
+        <p>Goals, constraints, and technical baseline aligned in one focused kickoff.</p>
+      </li>
+      <li>
+        <h3>Build Sprint</h3>
+        <p>Weekly delivery loops with demos, issue tracking, and transparent progress.</p>
+      </li>
+      <li>
+        <h3>Launch & Iterate</h3>
+        <p>Deployment support, monitoring, and ongoing optimization where it matters.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section shell" id="travel">
+    <div class="travel-panel">
+      <p class="eyebrow">GLOBAL DELIVERY</p>
+      <h2>Currently traveling across the world while supporting client builds.</h2>
+      <p>
+        Time zones are handled proactively with async updates, clear handoffs, and predictable availability windows.
+      </p>
+    </div>
+  </section>
+
+  <section class="section shell" id="contact">
+    <div class="contact-box">
+      <p class="eyebrow">REQUEST A QUOTE</p>
+      <h2>Need a quote for your custom web project?</h2>
+      <p>Send your scope, timeline, and goals to <a href="mailto:bjarne.kopplin@pm.me">bjarne.kopplin@pm.me</a> and I will get back to you with an estimate.</p>
+    </div>
+  </section>
 </div>

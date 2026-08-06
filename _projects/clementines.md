@@ -1,12 +1,12 @@
 ---
 layout: project
-title: "Automated clementine peeler"
-link: "https://www.github.com"
-link-title: "see on github"
+title: "Placeholder Project"
+link: "https://www.github.com/bkopplin"
+link-title: "placeholder link"
 link-icon: "github"
 img: "https://picsum.photos/1000/700?image=36"
-description: "this is just a placeholder"
+description: "placeholder project entry for future updates"
 ---
-also getting bored of peeling clementins?
+This is a placeholder project.
 
-## here's the *perfect* solution solution
+Replace this file when you are ready to publish a real project case.
